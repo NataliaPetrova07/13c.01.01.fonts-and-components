@@ -7,10 +7,14 @@
 
 /* Color Properties */
 :root {
-  --color-darker: rgb(48, 48, 48);
-  --color-dark: rgb(64, 64, 64);
-  --color-light: rgb(194, 194, 194);
-  --color-lighter: rgb(255, 255, 255);
+  --color-darker: #6070b3;
+  --color-dark: #4a437f;
+  --color-darkest: #1c1e27;
+  --color-light: #97a1c5;
+  --color-lighter: #f6f8fa;
+  --color-accent: #15b097;
+  --color-accent-2: #fbaf00;
+  --color-shadow: #acc1d7;
   /* you could add an accent color for CTAs and anchor tags ;-) */
 }
 
@@ -24,7 +28,7 @@ html {
 h1,
 h2,
 h3 {
-  color: var(--color-darker);
+  color: var(--color-darkest);
   font-family: "Playfair Display", serif;
   font-weight: 400;
   padding-bottom: 1rem;
@@ -33,6 +37,7 @@ h3 {
 h1 {
   font-size: 5.653rem;
   padding-bottom: 1rem;
+  color: var(--color-lighter);
 }
 
 h2 {
@@ -42,10 +47,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 1.728rem;
+  font-weight: 400;
   line-height: 1.5;
+  color: var(--color-dark);
 }
 
 p {
@@ -69,15 +74,19 @@ button {
   border: none;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-darker);
+  background-color: var(--color-accent);
   color: var(--color-lighter);
   text-transform: uppercase;
   font-weight: 400;
+  border-radius: 3%;
+  margin: 0.5rem;
 }
 
 .light_button {
-  background-color: var(--color-lighter);
-  color: var(--color-darker);
+  background-color: var(--color-accent-2);
+  color: var(--color-darkest);
+  border-radius: 3%;
+  margin: 0.5rem;
 }
 
 input[type="text"] {
@@ -97,11 +106,12 @@ nav {
   padding: 0.5rem;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-darker);
+  background-color: var(--color-light);
 }
 
 nav a {
-  color: white;
+  color: var(--color-darkest);
+  padding: 1rem;
   text-decoration: none;
 }
 
@@ -120,20 +130,16 @@ header {
   min-width: 300px;
 }
 
-.header_text h1 {
-  color: var(--color-lighter);
-}
-
 .header_text p {
   color: var(--color-light);
 }
 
 .header_graphics {
-  width: 35vw;
-  height: 35vw;
+  width: 45vw;
+  height: 30vw;
   min-width: 300px;
   min-height: 300px;
-  background-color: var(--color-darker);
+  background-color: var(--color-darkest);
 }
 
 /* Sections */
@@ -147,22 +153,27 @@ header {
   background-color: var(--color-light);
 }
 
+#intro h2 {
+  color: var(--color-darkest);
+}
+
 .intro_text {
   width: 40vw;
   min-width: 450px;
 }
 
 .intro_graphics {
-  width: 15vw;
+  width: 25vw;
   height: 15vw;
   min-width: 150px;
   min-height: 150px;
-  background-color: var(--color-dark);
+  background-color: var(--color-darker);
 }
 
 #cards {
   min-height: 80vh;
   padding: 5rem 5rem;
+  background-color: var(--color-lighter);
 }
 
 #card_container {
@@ -177,13 +188,14 @@ header {
 .card {
   width: 260px;
   padding: 2rem;
-  box-shadow: 0px 0px 10px 1px var(--color-light);
+  box-shadow: 1px 1px 5px 5px var(--color-lighter);
   border-radius: 1%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  background-color: white;
 }
 
 .card p,
@@ -208,12 +220,14 @@ header {
 }
 
 .card_title {
+  font-size: 1rem;
   font-weight: 400;
-  padding: 1rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
 }
 
 .card a {
-  color: var(--color-darker);
+  color: var(--color-accent);
 }
 .card_mail {
   margin-bottom: 2rem;
