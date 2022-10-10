@@ -1,0 +1,298 @@
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Color Properties */
+:root {
+  --color-darker: rgb(48, 48, 48);
+  --color-dark: rgb(64, 64, 64);
+  --color-light: rgb(194, 194, 194);
+  --color-lighter: rgb(255, 255, 255);
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap");
+html {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-darker);
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5.653rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+  padding-bottom: 1rem;
+  line-height: 1.75;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-dark);
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.header_text p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* UI Elements */
+button {
+  display: inline-block;
+  height: 3rem;
+  padding: 0 1.5rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.light_button {
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 3rem;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: var(--color-lighter);
+  border-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darker);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-dark);
+}
+
+.header_text {
+  width: 30vw;
+  min-width: 300px;
+}
+
+.header_text h1 {
+  color: var(--color-lighter);
+}
+
+.header_text p {
+  color: var(--color-light);
+}
+
+.header_graphics {
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--color-darker);
+}
+
+/* Sections */
+#intro {
+  display: flex;
+  min-height: 80vh;
+  padding: 0px 5rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-light);
+}
+
+.intro_text {
+  width: 40vw;
+  min-width: 450px;
+}
+
+.intro_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: var(--color-dark);
+}
+
+#cards {
+  min-height: 80vh;
+  padding: 5rem 5rem;
+}
+
+#card_container {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 3rem;
+  justify-items: center;
+  margin: 5rem 0;
+}
+
+.card {
+  width: 260px;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px 1px var(--color-light);
+  border-radius: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card p,
+.card h3 {
+  width: 100%;
+}
+
+.card_image {
+  width: 100%;
+  height: 200px;
+  padding-bottom: 2rem;
+  object-fit: cover;
+}
+
+.card input {
+  padding: 1rem 2rem;
+  border: 0;
+  font-size: 0.8rem;
+  min-width: 45%;
+  text-transform: uppercase;
+  border-radius: 3%;
+}
+
+.card_title {
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.card a {
+  color: var(--color-darker);
+}
+.card_mail {
+  margin-bottom: 2rem;
+}
+
+#info {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+.info_text {
+  width: 60vw;
+  min-width: 300px;
+}
+
+.info_text p {
+  margin-bottom: 2rem;
+}
+
+#contact {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact h2 {
+  padding-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 6vh 6rem;
+  padding-bottom: 5rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-darker);
+}
+
+footer li {
+  padding-bottom: 0.4rem;
+}
+
+footer h2,
+footer h3 {
+  line-height: 1;
+  color: var(--color-lighter);
+}
+
+footer a {
+  color: var(--color-light);
+  font-weight: 200;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+footer section a {
+  font-size: 0.878rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+}
+
+footer section {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
