@@ -37,13 +37,12 @@ h3 {
 h1 {
   font-size: 5.653rem;
   padding-bottom: 1rem;
-  color: var(--color-lighter);
 }
 
 h2 {
   font-size: 3.052rem;
   padding-bottom: 1rem;
-  line-height: 1.75;
+  line-height: 1.25;
 }
 
 h3 {
@@ -79,7 +78,12 @@ button {
   text-transform: uppercase;
   font-weight: 400;
   border-radius: 3%;
-  margin: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-darkest);
+  color: var(--color-lighter);
 }
 
 .light_button {
@@ -122,7 +126,7 @@ header {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: var(--color-dark);
+  background-color: var(--color-lighter);
 }
 
 .header_text {
@@ -131,7 +135,7 @@ header {
 }
 
 .header_text p {
-  color: var(--color-light);
+  color: var(--color-darkest);
 }
 
 .header_graphics {
@@ -139,7 +143,7 @@ header {
   height: 30vw;
   min-width: 300px;
   min-height: 300px;
-  background-color: var(--color-darkest);
+  background-image: url("https://source.unsplash.com/random/?architecture");
 }
 
 /* Sections */
@@ -167,7 +171,7 @@ header {
   height: 15vw;
   min-width: 150px;
   min-height: 150px;
-  background-color: var(--color-darker);
+  background-image: url("https://source.unsplash.com/random/?architecture");
 }
 
 #cards {
@@ -216,7 +220,13 @@ header {
   font-size: 0.8rem;
   min-width: 45%;
   text-transform: uppercase;
-  border-radius: 3%;
+  background-color: var(--color-light);
+  color: var(--color-lighter);
+  cursor: pointer;
+}
+
+.card input:hover {
+  background-color: var(--color-darker);
 }
 
 .card_title {
@@ -249,6 +259,8 @@ header {
 
 .info_text p {
   margin-bottom: 2rem;
+  color: var(--color-darkest);
+  line-height: 1.75;
 }
 
 #contact {
@@ -258,10 +270,12 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: var(--color-dark);
 }
 
 #contact h2 {
   padding-bottom: 3rem;
+  color: var(--color-accent-2);
 }
 
 /* Footer */
@@ -272,7 +286,7 @@ footer {
   align-items: top;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--color-darker);
+  background-color: var(--color-lighter);
 }
 
 footer li {
@@ -282,7 +296,7 @@ footer li {
 footer h2,
 footer h3 {
   line-height: 1;
-  color: var(--color-lighter);
+  color: var(--color-dark);
 }
 
 footer a {
